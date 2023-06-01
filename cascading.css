@@ -1,0 +1,24 @@
+.bold{ color: black;
+	background-color: white;
+	font-weight: 700;
+
+}
+.fancy{
+	color: white;
+background-color: green;
+	font-weight:400;
+	font-size: 36px;
+}
+.normal{
+color: white;
+	background-color: black;
+	font-size: 36px;
+}
+
+div.text{
+font-size: 36px;	
+}
+.child{
+font-weight: 700;
+  font-size: 14px;
+}
