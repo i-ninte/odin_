@@ -1,0 +1,28 @@
+div{background-color:lightblue;}
+
+.card {
+  padding: 8px;
+}
+
+.one {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.two {
+  margin-bottom: 8px;
+  padding: 16px 8px;
+}
+
+.three {
+  text-align: center;
+  padding: 8px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 24px;
+}
