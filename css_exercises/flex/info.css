@@ -1,0 +1,34 @@
+.container{
+display: flex;
+flex-direction:column;
+align-items: center;
+
+	background-color: white;
+	gap: 30px;
+
+}
+.info{
+	
+	text-align: center;
+justify-content: center;
+	font-weight: bold
+		
+
+}
+.one{
+display:flex;
+
+}
+.images{
+height: auto;
+	width: 80px;
+
+}
+.two{
+width: 100px;
+}
+.three{
+display: flex;
+	flex-direction: column;
+	align-items: center;
+}
