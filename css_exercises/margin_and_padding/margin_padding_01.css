@@ -1,0 +1,20 @@
+div.one{ font-size: 24px;
+	border: solid blue 2px;
+	padding: 20px;
+	background-color: pink;
+}
+
+div.two{
+border: solid red 2px;
+	background-color: lightblue;
+	margin: 20px;
+}
+
+div.three{
+	font-size:24px;
+border: solid brown 2px;
+	background-color: peachpuff;
+	padding:  20px;
+	margin-left:auto;
+	width: 200px;
+}
