@@ -1,0 +1,15 @@
+.empty{
+padding: 200px;
+	background-color: lightblue;
+	border: solid blue 2px;
+margin: 50px;
+}
+.central{
+	
+	width:80px;
+	height: 100px;
+justify-content: center;
+	background-color: lightpink;
+	border: solid red 2px;
+	font-weight: bold;
+}
