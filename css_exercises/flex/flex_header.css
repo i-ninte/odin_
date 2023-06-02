@@ -1,0 +1,36 @@
+.container{
+display: flex;
+	gap: 8px;
+	background-color:peachpuff;
+	width: 100%;
+	justify-content: space-between;
+}
+.box{
+
+padding: 8px;
+	border: solid white 1px;
+	color: blue;
+	background-color:white;
+	margin: 2px;
+	width: 25px;
+	font-size: 10px;
+
+}
+
+.logo{
+justify-content: center;
+	padding: 20px;
+		color: red;
+	background-color:white;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+.items{
+display: flex;
+}
+ul{
+
+list-style-type: none;
+}
