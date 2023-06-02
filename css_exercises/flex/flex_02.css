@@ -1,0 +1,58 @@
+.container{
+display: flex;
+	gap:5px;
+	background-color:white;
+	
+	justify-content: space-between;
+}
+
+.box{
+
+	background-color: white;
+	color: purple;
+
+}
+.logo{
+display: flex;
+	
+		color: purple;
+	
+	background-color:white;
+	font-weight: bold;
+	font-size: 40px;
+	
+}
+.items{
+display: flex;
+	font-size: 12px;
+	width:100px;
+}
+ul{
+
+list-style-type: none;
+}
+
+.circle{
+
+height: 50px;
+width: 50px;
+	border-radius:25px;
+	background-color: purple;
+	margin: 5px;
+	
+}
+.fancy{
+	
+	justify-content:center;
+	padding: 20px;
+	padding-bottom: 25px;
+background-color: purple;
+	border-radius: 5px;
+	color: black;
+	width: 150px;
+	height:5px;
+	
+}
+.empty{
+display: flex;
+}
