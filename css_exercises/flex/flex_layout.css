@@ -1,0 +1,102 @@
+
+.container{
+display:flex;
+	justify-content: space-between;
+	gap:5px;
+	
+}
+
+body{
+align-items: center;
+justify-content: center;
+	margin:0;
+	height: 100vh;
+}
+.about-store{
+	cursor:pointer;
+margin: 10px;
+display: flex;
+
+	
+}
+#ha{
+margin: 10px;
+
+}
+.profile-settings{
+	cursor:pointer;
+	display: flex;
+	align-items: flex-end;
+margin: 10px;
+}
+
+.image{
+	
+	display: flex;
+justify-content: center;
+	align-items: center;
+	padding: 20px;
+	height:10%;
+	
+}
+
+.odin{
+align-items: center;
+	justify-content:center;
+	padding:70px;
+	
+}
+.bar{
+	cursor:pointer;
+	display:flex;
+	padding:2px;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	border: solid grey 1px;
+	width: 500px;
+	height: 50px;
+	border-radius: 20px;
+}
+.do{
+	display: flex;
+	margin: 10px;
+}
+#three{
+	padding: 15px;
+	width: 200px;
+	height: 15px;
+	border-radius: 5px;
+	background-color: grey;
+	align-items:center;
+	justify-content: space-between;
+border: solid white 1px;
+	margin: 10px;
+}
+
+
+
+.one{
+display:flex;
+	justify-content: space-between;
+	gap:5px;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+footer{
+	
+	background-color: lightgray;
+   margin-bottom:20px;
+	
+	
+	
+}
+
+
+
+.come{
+	display: flex;
+justify-content: center;
+	align-items: center;
+}
