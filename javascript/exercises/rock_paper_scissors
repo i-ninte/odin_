@@ -1,0 +1,83 @@
+// Define an array of choices
+var choices = ['rock', 'paper', 'scissors'];
+
+// Function to get a random computer choice
+function getComputerChoice() {
+  // Generate a random index to select from the 'choices' array
+  var randomIndex = Math.floor(Math.random() * choices.length);
+  // Return the choice at the random index
+  return choices[randomIndex];
+}
+
+
+function playRound(playerSelection, computerSelection) {
+  // Convert playerSelection to lowercase (in case it's not already)
+  playerSelection = playerSelection.toLowerCase();
+
+  // Check for a tie
+  if (playerSelection === computerSelection) {
+    return "It's a tie!";
+  }
+
+  // Define the winning combinations
+  var winningCombinations = {
+    rock: 'scissors',
+    paper: 'rock',
+    scissors: 'paper'
+  };
+
+  // Check if player wins
+  if (winningCombinations[playerSelection] === computerSelection) {
+    return "You win! " + playerSelection + " beats " + computerSelection;
+  } else {
+    // If not a tie and not a player win, it's a computer win
+    return "You lose! " + computerSelection + " beats " + playerSelection;
+  }
+}
+
+const playerSelection = prompt("Enter your choice (rock, paper, or scissors):");
+
+// Ensure that the player's choice is one of the valid options
+if (choices.includes(playerSelection)) {
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
+} else {
+  console.log("Invalid choice. Please choose 'rock', 'paper', or 'scissors'.");
+}
+var playerScore = 0;
+var computerScore = 0;
+
+function game() {
+  for (var i = 0; i < 5; i++) {
+    const playerSelection = prompt("Enter your choice (rock, paper, or scissors):");
+
+    // Ensure that the player's choice is one of the valid options
+    if (choices.includes(playerSelection)) {
+      const computerSelection = getComputerChoice();
+      console.log(playRound(playerSelection, computerSelection));
+
+      // Update scores based on the result of each round
+      var roundResult = playRound(playerSelection, computerSelection);
+      if (roundResult.includes("win")) {
+        playerScore++;
+      } else if (roundResult.includes("lose")) {
+        computerScore++;
+      }
+    } else {
+      console.log("Invalid choice. Please choose 'rock', 'paper', or 'scissors'.");
+      i--; // Decrement i to repeat this round
+    }
+  }
+
+  // Determine the overall winner after 5 rounds
+  if (playerScore > computerScore) {
+    console.log("You win the game! Player: " + playerScore + " - Computer: " + computerScore);
+  } else if (playerScore < computerScore) {
+    console.log("You lose the game. Player: " + playerScore + " - Computer: " + computerScore);
+  } else {
+    console.log("It's a tie! Player: " + playerScore + " - Computer: " + computerScore);
+  }
+}
+
+// Start the game
+game();
