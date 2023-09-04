@@ -1,8 +1,8 @@
 const post = {
 
 
-id : 1,
-	title: 'post one',
+id: 1,
+	Title: 'post one,
 	body: 'This is my body',
 	
 };
