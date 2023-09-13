@@ -1,37 +1,23 @@
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-const weekdays = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-const giveaway= document.querySelector('.giveaway');
-const deadline= document.querySelector('.deadline');
-const items= document.querySelectorAll('.deadline-format');
-
-let futureDate= new Date(2023,4,24,15,13,8);
-
-const year= futureDate.getFullYear();
-const hours= futureDate.getHours();
-const minutes= futureDate.getMinutes();
+const btns= document.querySelectorAll(".tab-btn");
+const about= document.querySelector('.about');
+const articles= document.querySelectorAll(".content");
 
 
-
-giveaway.textContent= `giveaway ends on ${year} ${hours}:${minutes} am`;
+about.addEventListener('click', function (e){
+	const id= e.target.dataset.id;
+	
+	if(id){
+		// remove active from the buttons
+		btns.forEach( function(btn){
+			btn.classList.remove("active");
+			e.target.classList.add("active");
+	});
+		
+		// hide other articles 
+		articles.forEach( function(article){
+			article.classList.remove('active');
+		});
+		const element= document.getElementById(id);
+		element.classList.add('active');
+	}
+});
